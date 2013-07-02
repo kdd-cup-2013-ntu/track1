@@ -1,0 +1,85 @@
+	This README contains brief description about the functionality 
+	of each code under this folder.
+
+	trans_feature1:
+		(1) Read PaperAuthor.my
+		(2) Given an Paper Id in PaperAuthor.my, calculate the
+			number of Author who wrote this Paper Id, and write
+			to ../features/paper.authornum 
+		(3) Given an Author Id in PaperAuthor.my, calculate the 
+			number of Paper wriiten by this Author Id, and write 
+			to ../features/author.papernum 
+
+	trans_feature3:
+		(1) Read PaperAuthor.my, Paper.my
+		(2) Given an Author Id in PaperAuthor.my, list all of 
+			the conference Id associated with the papers written
+			by this Author Id, and write to 
+			../features/author.conferencelist
+		(3) Given an Author Id in PaperAuthor.my, list all of 
+			the Journal Id associated with the papers written
+			by this Author Id, and write to 
+			../features/author.journallist
+
+	trans_feature4:
+		(1) Read PaperAuthor.my
+		(2) Given an Paper Id in PaperAuthor.my, list all of 
+			the Author Id who wrote this Paper Id, and write 
+			to ../features/paper.authorlist
+		(3) Given an Author Id in PaperAuthor.my, list all of
+			the Paper Id written by this Author Id, and write
+			to ../features/author.paperlist
+
+	trans_feature6:
+		(1) Read PaperAuthor.my, PaperYear.my
+		(2) Given an Paper Id, write the paper's year to 
+			../features/paper.year
+		(3) Given an Author Id, record the earliest year
+			among all Paper Id written by this Author Id,
+			and write to ../feature/author.yearstart
+		(4) Given an Author Id, record the latest year
+			among all Paper Id written by this Paper Id,
+			and write to ../feature/author.yearend
+
+	trans_feature7:
+		(1) Read paper.authorlist, paper.authorlist
+		(2) Given an Author Id in PaperAuthor.my, 
+			calculate the number coauthor of this Author 
+			Id, and write to ../features/author.coauthornum
+		(3) Guven an Author Id in PaperAuthor.my,
+			list all the coauthor of this Author Id,
+			and write to ../features/author.coauthorlist
+
+	make_feature:
+		Making 11 features based on the above 
+		preprocessing files. Features are listed below
+		(1) Number of paper of a given Author Id
+		(2) Earliest year of paper of a given Author Id
+		(3) Latest year of paper of a given Author Id
+		(4) Number of coauthor of a given Author Id
+		(5) Number of author of a given Paper Id
+		(6) Year of a given Paper Id
+		(7) Given an (P_i,A_j) pair, count the number
+			of conference Id associated with paper Id
+			written by A_j which is same as P_i's
+			conference Id ( A_j - P - C id - P_i )
+		(8) Given an (P_i,A_j) pair, count the numer 
+			of journal Id assocaited with paper Id
+			written by A_j which is same as P_i's 
+			journal Id ( A_j - P - J id - P_i )
+		(9) Given an (P_i,A_j) pair, count the number 
+			of coauthor excluding A_j itself
+		(10) Given an (P_i,A_j) pair, count the number 
+			of PAPA path (P_i - A - P - A_j )
+		(11) Given an (P_i,A_j) pair, calculate the 
+			ratio of valid PAPA cnt
+
+	make_feature1:
+		Making 2 features based in the above 
+		preprocessing files. Features are listed below
+		(12) PAPA Cnt similar to (10), excluding A_j
+			itself
+		(13) PAPA ratio similar to (11), excluding A_j
+			itself
+
+

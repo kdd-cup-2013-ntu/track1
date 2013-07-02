@@ -1,0 +1,6 @@
+{
+	"TRAIN_DATA_DIR_PATH": "raw_data/",
+	"TEST_DATA_PATH": "raw_data/Test.csv",
+	"MODEL_DIR_PATH": "models/",
+	"SUBMISSION_PATH": "submission.csv"
+}

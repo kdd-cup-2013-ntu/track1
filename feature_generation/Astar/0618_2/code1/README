@@ -1,0 +1,29 @@
+This README contains brief description about the functionality 
+of each code under this folder.
+
+strcmp95.c:
+	(1) The strcmp95 function returns a double precision value
+		from 0.0 (total disagreement) to 1.0 (char-by-char agree).
+		The return value is a measure of the similarity of the 
+		two strings. This similarity is also called Jaro-Winkler 
+		distance
+	(2) This code is download from 
+		http://cpansearch.perl.org/src/SCW/Text-JaroWinkler-0.1/strcmp95.c
+
+trans_feature1:
+	(1) Given a (P_i,A_j) pair, calculate the number of 
+		duplicated (P_i,A_j) pair in PaperAuthor.csv. 
+	(2) Given a (P_i,A_j) pair, calculate the max Jaro-
+		Winker distance of (\bar{A},A_j} in terms of full
+		name. \bar{A} is the coauthor of A_j, excluding 
+		A_j itself.
+	(3) Given a (P_i,A_j) pair, calculate the max Jaro-
+		Winker distance of (\bar{A},A_j} in terms of last
+		name. \bar{A} is the coauthor of A_j, excluding 
+		A_j itself. We obtain the last name simply by taking
+		the last word in full name
+
+trans_feature2:
+	(1) Given a (P_i,A_j) pair, count the number of 
+		PAP path ( P_i - A_j - P )
+
