@@ -1,4 +1,8 @@
 all:
+	mkdir -p raw_data
+	mkdir -p features
+	mkdir -p models
+	mkdir -p scores
 	make -C util/ all
 	make -C ensemble/ all
 	make -C feature_generation/Astar/0618_2/code/ all

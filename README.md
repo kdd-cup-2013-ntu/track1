@@ -41,7 +41,7 @@ Python depencecy:
 	(4) nltk 2.0
 
 # How to train models
-1) Type "make" to compile codes. 
+1) Type "make" to create necessary directories and compile codes. 
 
 2) Set paths in SETTINGS.json
 
@@ -57,3 +57,10 @@ are both in predict.py.
 1) Set paths in SETTINGS.json
 
 2) Run predict.py
+
+# Paths in SETTING.json
+All paths are relative paths to the top level directory.
+
+"TRAIN_DATA_DIR_PATH" describes the path to the raw data directory. Our default raw data directory is "raw_data". There are two choices to set up data. One is to put all data in "raw_data", and the other is to set the path to the directory you put the data in.
+
+"SUBMISSION_PATH" describes the path of output file. The format follows the spec defined by Kaggle.
